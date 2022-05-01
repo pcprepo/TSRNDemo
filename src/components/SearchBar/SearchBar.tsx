@@ -1,11 +1,7 @@
 import React from 'react';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 import {View,Alert} from 'react-native';
-interface searchProps {
-title : string;
-subTitle:string;
-okPress :()=>void;
-}
+import {searchProps} from '../../types/index';
 const SearchBar=({title,subTitle,okPress}:searchProps)=>{
   const cancelAlert=()=>{
       Alert.alert("Cancel","Cancel clicke");

@@ -5,6 +5,9 @@ import {searchProps} from '../../types/index';
 const SearchBar=({title,subTitle,okPress}:searchProps)=>{
   const cancelAlert=()=>{
       Alert.alert("Cancel","Cancel clicke");
+  }
+  const childFunction=()=>{
+    Alert.alert("Component","This is a child function");
   }  
     return(
         <Card>
